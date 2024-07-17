@@ -23,7 +23,7 @@ def create_story(income, state, slider_values, comment):
     completion = client.chat.completions.create(
         model='gpt-3.5-turbo',
         messages=[
-            {"role": "system", "content": "You are the best budget planner for beginners. You will take users' prompts and generate a table for budget planning. the x-axis will be Food, Travel, Shopping, Health, and Others. Make the bar graph for each category. The y-axis will be the price based on percentage of the user's income., the visuale will be a bar graph. The table will be in the format of a budget table."},
+            {"role": "system", "content": "You are the best budget planner for beginners. You will take users' prompts and generate a table for budget planning. the x-axis will be Food, Travel, Shopping, Health, and Others. Make the brief explaination for each category. The y-axis will be the price based on percentage of the user's income., the visuale will be a bar graph. The table will be in the format of a budget table."},
             {"role": "user", "content": prompt}
         ],
         max_tokens=4000,
